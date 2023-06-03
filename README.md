@@ -1,7 +1,7 @@
 <h2> React Chat App</h2>
 <h3>Description</h3>
 <p> This is Chat Application build using Reactjs. </p>
-<h4>Live Project:- https://ersystem-p85s.onrender.com</h4>
+<h4>Live Project:- https://reactchatapp01.netlify.app/</h4>
 <h4>Youtube:- https://www.youtube.com/watch?v=V9ocxLrbnLA</h4>
 
   ## Features
