@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Nunito:wght@400;500;600;700&display=swap');
+
+.no-chat-background {
+  background-color: #edeff0;
+}
+
+.message-box {
+  height: 95vh;
+  overflow: auto;
+  background-image: url(../../images/bg.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.message-box::-webkit-scrollbar {
+  display: none;
+}
+
+.message-box {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* header */
+.message-box-header {
+  background: rgb(103, 37, 226);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+  box-shadow: 0 4px 8px 0 rgb(59 59 59 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.message-box-header p {
+  font-size: 1.6rem;
+  font-family: 'Kurale', serif;
+}
+
+.messages-section {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 30px 40px;
+}
+
+.message-bubble {
+  display: flex;
+  align-items: center;
+}
+
+.mbr {
+  flex-direction: row-reverse;
+}
+
+/* no message found */
+
+.no-message-alert {
+  position: absolute;
+  bottom: 50px;
+  left: 60%;
+  font-size: 14px;
+  color: #fff;
+  background-color: red;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 622px) {
+  .no-message-alert {
+    font-size: 14px;
+  }
+}
+
+/* chat bubbles css */
+.left-bubble {
+  width: 220px;
+  height: auto;
+  display: block;
+  background: #581DC5;
+  color: #fff;
+  border-radius: 4px;
+  position: relative;
+  margin: 15px 0;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media screen and (max-width: 792px) {
+  .left-bubble {
+    width: 200px;
+    padding: 6px;
+    margin: 10px 0;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+  .message {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .message {
+    font-size: 12px;
+  }
+}
+
+.txt {
+  padding: 8px 55px 8px 14px;
+}
+
+.message {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  font-family: 'Kurale', serif;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0 0 4px;
+  color: #3cff00;
+  font-family: 'Nunito', sans-serif;
+}
+
+.message-timestamp {
+  font-size: 11px;
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.bubble-arrow {
+  position: absolute;
+  border-top: 9px solid #581DC5;
+  width: 0;
+  bottom: 42px;
+  left: -16px;
+  height: 0;
+}
+
+.bubble-arrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 9px solid #581DC5;
+  border-radius: 0 20px 0;
+  width: 15px;
+  height: 30px;
+  transform: rotate(145deg);
+}
+
+/* right bubble */
+.right-bubble {
+  width: 220px;
+  height: auto;
+  display: block;
+  background: #581DC5;
+  color: #fff;
+  border-radius: 4px;
+  position: relative;
+  margin: 10px 0;
+  align-self: flex-end;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media screen and (max-width: 792px) {
+  .right-bubble {
+    width: 200px;
+    padding: 6px;
+    margin: 10px 0;
+  }
+}
+
+.bubble-arrow-alt {
+  right: -2px;
+  bottom: 40px;
+  left: auto;
+}
+
+.bubble-arrow-alt:after {
+  transform: rotate(45deg) scaleY(-1);
+}
+
+/* message-input */
+.message-input {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  background-color: #edeff0;
+}
+
+.message-input input {
+  width: 50rem;
+  height: 2.8rem;
+  border: none;
+  padding: 6px 26px;
+  outline: none;
+  margin-left: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* send button  css */
+.send-button {
+  width: 30%;
+  height: 2.8rem;
+  color: white;
+  padding: 6px;
+  margin-left: 13rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: rgb(30, 207, 7);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.send-button:hover {
+  transform: scale(1.04);
+}
+
+@media screen and (max-width: 792px) {
+  .send-button {
+    font-size: 12px;
+    width: 40%;
+  }
+}
