@@ -12,10 +12,6 @@
   * Show the current selected conversation messages
 
   * Send a message in the conversation
- 
-  * SignUp Interface
-
-  * SignIn Inteface
 
 ## Tech stack
 <ul>
