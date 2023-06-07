@@ -28,3 +28,9 @@
   1. Clone this project
   2. npm install
   3. npm start
+
+<h2> Project Image </h2>
+
+![Screenshot (381)](https://github.com/shubhamkr83/React_Chat_App/assets/72254047/7ba02639-ea57-468d-b7e9-3a3e095f756a)
+
+![Screenshot (382)](https://github.com/shubhamkr83/React_Chat_App/assets/72254047/b5ba0c47-47d3-4c69-b9dd-524604af7b2b)
